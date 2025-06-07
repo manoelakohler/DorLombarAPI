@@ -6,7 +6,7 @@ app = FastAPI(docs_url="/", title="Deploy DM BIMaster")
 # Carrego meu modelo treinado
 model = joblib.load("model/spine_model.pkl")
 
-
+# teste branch
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     """
